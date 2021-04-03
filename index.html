@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injinia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="ft/bootstrap-icons.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <style>
+      @font-face {font-family: 'ARegular';
+                  src: url('ft/ARegular.otf');}
+      @font-face {font-family: 'ABold';
+          src: url('ft/ABold.otf');}
+      @font-face {font-family: 'ALight';
+          src: url('ft/ALight.otf');}
+
+      .premier{ background-image: url(); opacity:1;}
+      .a{box-shadow : 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
+      .k{padding-left:15px; padding-right:15px;padding-bottom:12px; padding-top:13px;
+        font-size: 1.5em;border-radius: 100%;color:white; background: linear-gradient(to right, #f12711, #f5af19);}
+         
+      .kfo{padding-left:2.3rem; padding-right:2.3rem;padding-bottom:2rem; padding-top:2rem;
+        font-size: 2.5em;border-radius: 100%;background: linear-gradient(to right, #f12711, #f5af19);}
+         
+      .pad{padding: 50px;}
+      .foot{ padding: 10px;background: linear-gradient(to right, #000000, #434343);}
+      a, h1, h3,h4, h5, .kfo {font-family: 'ALight';}
+      .a-2{box-shadow: .25rem .25rem 2rem rgba(148,127,250,.4), -.25rem -.25rem 2rem rgba(148,127,250,.4);}
+      h4{color: #000000;}
+      p, li, h6, button,.g, input{font-family: 'ALight';}
+      .auteurs:hover{ background: linear-gradient(to right, #000000, #434343); color: white;}
+      .fond, .subm{ background: linear-gradient(to right, #fe8c00, #f83600); }
+      .fondu{ background: linear-gradient(to right, #000000, #434343); }
+      .pad1{background: linear-gradient(to left, #212861, #5A66D7);}
+      .pad2{background: linear-gradient(to right, #000000, #434343); }
+     
+        .round{
+          overflow: hidden;
+          width: 10em;
+          height: 10em;
+          line-height: 100px;
+          padding: 0;
+          border-radius: 50%;
+          text-align: center;
+          
+        }
+        .active{
+          border-bottom: solid #5A66D7 1px;
+          width: fit-content;
+        }
+     </style>
+</head>
+<body>
+ <!--Navbar-->
+ <div class="container-fluid text-white bg-white sticky-top shadow-lg" style="opacity: 0.95">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <nav class=" navbar navbar-expand-sm navbar-light bg-white text-dark ">
+
+              <a href="#" class="navbar-brand "><img src="i/logo.jpg" alt="auteur" class=" mx-auto bg-info " style="width: 5rem; border-radius: 100%;"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-label="toggle navigation">
+                  <i class="bi-box"></i>
+                </button>
+
+             <div class="collapse navbar-collapse " id="menu">
+               <ul class="navbar-nav ml-auto">
+
+                      <li class="nav-item active">
+                          <a href="index.html" class="nav-link ">Accueil <span class="sr-only">(current)</span> </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="lecons.html" class="nav-link ">Leçon</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="contact.html" class="nav-link ">Contact</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Recherche" aria-label="Search">
+                        <i class="btn bi-search" ></i>
+                        <i class="btn bi-person-square" ></i>
+                      </form>
+                </ul>
+              </div>
+              </nav>
+            </div>
+      </div>
+           
+        </div>
+ </div>
+   
+ 
+ <!--Carousel-->
+ <div class="pad premier container-fluid pt-0 pb-0 text-white" style="background:rgb(255, 255, 255)" >
+ 
+   
+  <div class="row">
+         <div class="col" >
+              <div id="pub" class="carousel slide"  data-ride:="carousel" style="max-height: 550px;">
+                 <ol class="carousel-indicators">
+                   <li data-target="#pub" data-slide-to="0" class="active"></li>
+                   <li data-target="#pub" data-slide-to="1"></li>
+                   <li data-target="#pub" data-slide-to="2"></li>
+                   <li data-target="#pub" data-slide-to="3"></li>
+                   <li data-target="#pub" data-slide-to="4"></li>
+                   <li data-target="#pub" data-slide-to="5"></li>
+                 </ol>
+
+                 <div class="carousel-inner" style="max-height: 550px;">
+
+                   <div class="carousel-item active">
+                    <img src="im/1.jpeg" alt="" class=" d-block w-1000 img-fluid  my-auto mx-auto" >
+                  </div>
+
+                   <div class="carousel-item ">
+                     <img src="im/2.jpeg" alt="" class="d-block w-1000 img-fluid my-auto mx-auto">
+                   </div>
+
+                   <div class="carousel-item ">
+                     <img src="im/5.jpeg" alt="" class="d-block w-1000 img-fluid my-auto mx-auto">
+                   </div>
+
+                   <div class="carousel-item ">
+                     <img src="im/6.jpeg" alt="" class="d-block w-1000 img-fluid my-auto mx-auto">
+                   </div>
+                   <div class="carousel-item ">
+                     <img src="im/7.jpeg" alt="" class="d-block w-1000 img-fluid my-auto mx-auto">
+                   </div>
+                   <div class="carousel-item ">
+                     <img src="im/8.jpg" alt="" class="d-block w-1000 img-fluid my-auto mx-auto">
+                   </div>
+
+                   </div>
+
+                 </div>
+
+                 <a href="#pub" class="carousel-control-prev" role="button"  data-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Previous</span>
+                 </a>
+                 <a href="#pub" class="carousel-control-next" role="button" data-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+                 </a>
+              </div>
+         </div>
+       </div>
+</div>
+
+ <!--Carousel-->
+    <div class="card pb-3 " style="border-radius: 0px; border: black; ">
+      <img src="i/logo.jpg" class="card-img img-fluid" alt="" style="max-height:fit-content;">
+    <div class="card-img-overlay" style=" background: linear-gradient(to right, #fe8c00b3, #f83600d0); ">
+       <div class="container pt-4">
+         <div class="row my-auto" >
+              <div class="col-sm-6 text-center text-white ">
+                    <h1 style="font-size: 9vw;" > Dessin<br> Industriel</h1>
+                      <h6 style="font-weight: normal;">Injinia, la plateforme qui facilite aux élèves et étudiants l'apprentissage du dessin industriel</h6>
+                          <button type="button" class="btn btn-outline-success text-white" style="background: linear-gradient(to left, #212861, #5A66D7)">
+                            voir plus <i class="bi-arrow-right"></i> </button>          
+              </div>
+              <div class="col-sm-6  d-none d-sm-block ">
+                <img src="i/lec.jpg" alt="" class="img-thumbnail shadow-lg">;
+              </div>
+          </div>
+       </div>
+     </div>
+    </div>
+    
+  </div>
+
+
+<!--Newsletter-->  
+          <!-- <div class="container-fluid py-4 text-center text-white fondu ">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-4 ">
+                  <input type="text" class="form-control mb-3" placeholder="Entrer votre Nom">
+                </div>
+                  <div class="col-sm-12 col-md-4">
+                      <input type="email" class="form-control mb-3" placeholder="Entrer votre Email"> 
+                    </div>
+                      <div class="col-sm-12 col-md-4">
+                     <div type="submit" class="form-control fond text-white"> <i class="far fa-envelope"></i>  Souscrire</div>
+                    </div>
+                </div>
+              </div>
+            </div> -->
+            
+          </div>
+
+          <!--Pesentation-->
+<div class="pad1 container-fluid  text-center text-white  p-3">
+    <div class="container px-auto">
+      <div class="row">
+        <div class="col">
+          <h1 id="creer">Présentation</h1>
+          <p> Injinia est une platforme d'aprentissage en ligne proposant une formation en ligne à destination des élèves et étudiants<br>
+              </p>
+            <button type="button" class="btn btn-outline-light">Voir plus <i class="bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Details 4-->
+
+  <div class="container-fluid text-dark bg-white py-4">
+          <div class="container">
+            <div class="row text-center">
+
+              <div class="col-sm-12 col-md-4">
+                  <div class="round text-center mx-auto a mb-4" style="line-height: 93px;">
+                    <i class="bi-pen" style="font-size: 2rem; color: black;"></i> <br>
+                    <p class="mt-n5">Simplicité</p>
+                  </div>
+              </div>
+              
+              <div class="col-sm-12 col-md-4">
+                <div class="round pad1 mx-auto a mb-4 text-white" style="line-height: 93px;">
+                  <i class="bi-badge-3d" style="font-size: 2rem; color: white;"></i> <br>
+                <p class="text-white mt-n5">Pédagogique</p>
+              </div>
+               </div>
+
+               <div class="col-sm-12 col-md-4 text-center ">
+                <div class="round text-center mx-auto a" style="line-height: 93px;">
+                  <i class="bi-eyeglasses" style="font-size: 3rem; color: rgb(99, 99, 99);"></i> <br>
+                  <p class="mt-n5">Acompagnement</p>
+                </div>
+               </div>
+
+               </div>
+              </div>
+            </div>
+          </div>
+
+
+<!--les auteurs-->
+
+</div>
+</div>
+</div>
+
+<!--Partenaires-->
+<div class="pad1 container-fluid  text-center text-white  p-3">
+    <div class="container px-auto">
+      <div class="row">
+        <div class="col">
+          <h1 id="creer">A qui cette platforme s'adresse t-elle ?</h1>
+          <p> * Elèves et étudiants d'écoles et instituts technologiques <br>
+            *Formateur en dessin industriel
+            *Les curieux...
+              </p>
+            <button type="button" class="btn btn-outline-light">Voir plus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--apropos-->
+
+    <div class=" container-fluid text-center text-dark bg-light ">
+      <div class="container">
+        <div class="row p-4">
+          <div class="col a">
+             <h1 class=" text-center" id="apropos" >Que contient cette plateforme?</h1>
+                <p class=" text-center" >Nous passons en revue la projection orthographique, les vues en coupe, les vues auxilliare, les styles de cotation, etc... Afin de faciliter une meilleure lecture du dessin aux apprnants, nous proposons un environnement de visualisation des dessins en 3D </p>
+             
+                        </div>
+                  </div>
+
+      </div>
+    </div>
+ <!--Footer-->
+
+<footer class=" white-text teal accent-3 z-depth-5" style="padding-left: 8px; padding-right: 8px; background-color: #5A66D7; color: whitesmoke;">
+  <div class="row" style="margin-bottom: 0rem; padding: 1rem;">
+        <div class="col s12 m4 ">
+          <h5><span style="font-weight: 900;">Solution</span>  <span class="g">Injinia</span> </5>
+        </div>
+        <div class="col s12 m4 center-align">
+ 
+          <i class="bi-facebook mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-twitter mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-linkedin mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-youtube mr " style="font-size: 1.8em;"></i> 
+       
+        </div>
+        <div class="col s12 m4">
+        <p>
+          <i class="bi-globe right fa-2x mr" style="font-size: 1.5em;"> <span class="p" style="font-size: 15px;">Français</span> </i>
+        </p>
+        </div>
+  </div>
+</footer>
+
+<div class="page-footer teal accent-4"style="padding: 8px; background-color: #212861; color:white">
+<div class="container">
+<div class="row" style="margin-bottom: 0rem; padding: 2rem;">
+  <div class="col s12 m4 ">
+      <h5>Terms & Conditions</h5>
+      <p>Apprennez plus sur les termes et condition générales d'utilisation de la plateforme injinia</p>
+  </div>
+  <div class="col s12 m4">
+    <h5>Social media</h5>
+      <i class="bi-arrow-right-short"></i> Linkedin <br>
+      <i class="bi-arrow-right-short"></i> Twitter <br>
+      <i class="bi-arrow-right-short"></i> Facebook
+</div>
+  <div class="col s12 m4">
+      <h5>Navigation</h5>
+      <i class="bi-app-indicator"></i> Accueil <br>
+      <i class="bi-app-indicator"></i> Leçons <br>
+      <i class="bi-app-indicator"></i> Contact <br>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer> 
+  <div class="foot container-fluid  text-center text-white bg-primary p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <br>
+          <h5>Injinia</h5>
+            <h6>Copyright &copy; <script>document.write(new Date().getFullYear())</script> </h6>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+    <!--JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <script src="bootstrap.js"></script>
+        <script src="bootstrap.bundle.js"></script>
+        <script src="Jquery.js"></script>
+</body>
+</html>

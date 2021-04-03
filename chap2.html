@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injinia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="ft/bootstrap-icons.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <style>
+      @font-face {font-family: 'ARegular';
+                  src: url('ft/ARegular.otf');}
+      @font-face {font-family: 'ABold';
+          src: url('ft/ABold.otf');}
+      @font-face {font-family: 'ALight';
+          src: url('ft/ALight.otf');}
+
+      .premier{ background-image: url(); opacity:1;}
+      .a{box-shadow : 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
+      .a-1{box-shadow : 0px 0px 10px #bebebe, 0px 0px 0px #ffffff;}
+      .k{padding-left:15px; padding-right:15px;padding-bottom:12px; padding-top:13px;
+        font-size: 1.5em;border-radius: 100%;color:white; background: linear-gradient(to right, #f12711, #f5af19);}
+         
+      .kfo{padding-left:2.3rem; padding-right:2.3rem;padding-bottom:2rem; padding-top:2rem;
+        font-size: 2.5em;border-radius: 100%;background: linear-gradient(to right, #f12711, #f5af19);}
+         
+      .pad{padding: 50px;}
+      .foot{ padding: 10px;background: linear-gradient(to right, #000000, #434343);}
+      a, h1, h3,h4, h5, .kfo {font-family: 'ALight';}
+      h4{color: #000000;}
+      p, li, h6, button, input{font-family: 'ALight';}
+      .auteurs:hover{ background: linear-gradient(to right, #000000, #434343); color: white;}
+      .fond, .subm{ background: linear-gradient(to right, #fe8c00, #f83600); }
+      .fondu{ background: linear-gradient(to right, #000000, #434343); }
+      .pad1{background: linear-gradient(to left, #212861, #5A66D7);}
+      .pad2{background: linear-gradient(to right, #000000, #434343); }
+     
+        .round{
+          overflow: hidden;
+          width: 10em;
+          height: 10em;
+          line-height: 100px;
+          padding: 0;
+          border-radius: 50%;
+          text-align: center;
+          
+        }
+
+        .graTitle{
+                padding: 0.75rem;
+                border-radius: 8px;
+                border-width: 8px;
+                font-size: 1.4rem;
+                margin: 20px auto;
+                
+                overflow-wrap: break-word;
+                background: #5a67d713;
+                
+                border-width: 6px;
+                border-style: solid;
+                border-image: 
+                  linear-gradient(
+                    to bottom, 
+                    #5A66D7, 
+                    rgba(165, 126, 126, 0)
+                  ) 1 100%;
+              }
+              .b{
+                color: indigo;
+                font-weight: bold;
+                font-size: 17px;
+
+              }
+              .c{
+                border-left: tomato solid 4px;
+              }
+              .d{
+                border-left: #6f7add solid 4px;
+              }
+              .e{
+                border-left: rgb(142, 236, 0) solid 4px;
+              }
+              .f, p, ul>li{
+                font-size: 14px;
+              }
+              .active{
+                border-bottom: solid #5A66D7 1px;
+                width: fit-content;
+              }
+     </style>
+</head>
+<body>
+<!--Navbar-->
+ <div class="container-fluid text-white bg-white sticky-top shadow-lg" style="opacity: 0.95;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <nav class=" navbar navbar-expand-sm navbar-light bg-white text-dark ">
+
+              <a href="#" class="navbar-brand "><img src="i/logo.jpg" alt="auteur" class=" mx-auto bg-info " style="width: 5rem; border-radius: 100%;"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-label="toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+             <div class="collapse navbar-collapse " id="menu">
+               <ul class="navbar-nav ml-auto">
+
+                      <li class="nav-item ">
+                         <a href="index.html" class="nav-link">Accueil <span class="sr-only">(current)</span> </a>
+                      </li>
+                      <li class="nav-item active">
+                         <a href="lecons.html" class="nav-link">Leçon</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a href="contact.html" class="nav-link">Contact</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Recherche" aria-label="Search">
+                        <i class="btn bi-search" ></i>
+                        <i class="btn bi-person-square" ></i>
+                      </form>
+                </ul>
+              </div>
+              </nav>
+            </div>
+      </div>
+           
+        </div>
+ </div>
+
+<!--Before titre-->
+<div class="card" style="border-radius: 0px; border: black; ">
+  <img src="im/3.jpg" class="card-img img-fluid " alt="" style="max-height: 38vw;">
+<div class="card-img-overlay" style=" background: linear-gradient(to right, #9400fe93, #00dbf898);">
+</div>
+</div>
+
+<!--Titre-->
+  <div class="container mt-n5 ">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col a-1 bg-light mt-n4 p-2" style="border-radius: 10px;">
+          <h4 id="item-1" class="b text-center">Chapitre II: Vues et projections orthogonales d'un objet</h4>
+
+              <p class=" text-center" >Dans ce chapitre nous passerons une vue panoramique des notions du dessin technique </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+        <!--Sommaire + resumé-->
+  <div class="container-fluid text-dark ">
+      <div class="container">
+        <div class="row">
+            <!--table-->
+          <div class="col-md-4 d-none d-sm-block ">
+            <nav id="navresum" class="navbar navbar-light bg-light">
+              <h3>Sommaire</h3>
+              <nav class="nav nav-pills ">
+                <a class="nav-link f" href="#item-1">Chapitre I: Généralité sur le dessin technique</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link f ml-3 my-1" href="#item-1-1">But du dessin technique</a>
+                  <a class="nav-link f ml-3 my-1" href="#item-1-2">La normalisation</a>
+                  <a class="nav-link f ml-3 my-1" href="#item-1-3">Principaux types de dessin</a>
+                  <a class="nav-link f ml-3 my-1" href="#item-1-4">Matériel du dessinateur</a>
+                  <a class="nav-link f ml-3 my-1" href="#item-1-5">Ecritures</a>
+                  <a class="nav-link f ml-3 my-1" href="#item-1-6">Les formats de dessin</a>
+                  <a class="nav-link f ml-3 my-1" href="#item-1-7">Nomenclature</a>
+                </nav>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+
+           <!--Resumé-->
+           <div class="col-md-8">
+           <i class="bi-bookmark-check-fill" style="color: rgb(4, 4, 107); font-size: 1.3em;"></i> <span style="color:rgb(4, 4, 107);"># résumé</span>
+              <div class=" a p-3 mb-2 graTitle overflow-auto" style="height: 400px;">
+                <div data-spy="scroll" data-target="#navresum" data-offset="0" tabindex="0">
+                    <p id="item-1-1" class="b">But du dessin technique</p>
+                  <p>Le dessin industriel, manuel ou assisté par ordinateur (DAO, CAO, etc.), est l'outil
+                    graphique le plus utilisé par les techniciens et les ingénieurs pour passer de l’idée (l’étude) à la
+                    réalisation (fabrication) d'un objet ou produit.
+                    L'apprentissage du dessin industriel
+                    permet d’acquérir la capacité de voir ou d’imaginer un objet à trois dimensions dans l’espace.
+                    La vision dans l'espace, c'est-à-dire la capacité à voir ou à imaginer un objet à trois
+                    dimensions dans l'espace, est une formidable aide à la création pour l'esprit et le cerveau
+                    humain. Cette qualité fondamentale n'est pas un don du ciel, elle doit être travaillée,
+                    développée, et cultivée par des exercices graphiques' répétés et suffisamment nombreux.
+                    Le  dessin  technique,   est  le  moyen  d'expression indispensable et universel de tous les techniciens et ingénieurs.Cest un  langage  de  communication  technique  universel, qui est soumis à des règles précises définies par la normalisation</p>
+                    <h5 id="item-1-2" class="b">La normalisation</h5>
+                  <p>La  normalisation  est  la  définition  de  spécifications  techniques  concernant  un  produit  ou  une  activité,  à  des  fins  de  qualité,  de  sécurité  ou  d'uniformisation.  En  dessin  technique,  les  caractères d'écriture, les traits d'exécution et les formats de dessins sont normalisés.</p>
+                    <h4 id="item-2" class="b">Principaux types de dessin</h4>
+                  <p>Selon la norme : NF EN 30209 – ISO 10209</p>
+                    <ul>
+                      <li>Abaque </li>
+                      <li>Croquis</li>
+                      <li>Esquisse</li>
+                      <li>Schema</li>
+                      <li>Epure</li>
+                      <li>Le dessin Avant-Projet</li>
+                      <li>Le dessin de projet</li>
+                      <li>Le dessin de definition</li>
+                      <li>Le dessin d'ensemble</li>
+                    </ul>
+                    <h4 id="item-3" class="b">Matériel du dessinateur</h4>
+                  <p>Pour bien dessiner, il faut être muni d’un matériel de bon ne qualité, maintenu constamment en bon état. Voici la liste du matériel nécessaire:
+                  </p>
+                  <ul>
+                    <li> Planche à dessin, de dimensions variables suivant le format adopté. </li>
+                    <li>Papier à des in A4.</li>
+                    <li> des mines de diamètre calibré est normalisé : 0.18 mm (pour les trais fi ns), 0.5 mm pour les trais moyens e t 0.7 mm (pour les traits forts)</li>
+                    <li>Gomme à crayon et gomme à encre.</li>
+                    <li>Té, de longueur correspondant à celle de la planche,</li>
+                    <li>Equerre à 60°, assez grande, Equerre à 45°, Rapporteur d’angle</li>
+                    <li>Ruban adhésif pour fixer la feuille de papier sur la table à dessin ...etc</li>
+                    
+                  </ul>
+                    <h5 id="item-3-1" class="b">Ecritures</h5>
+                  <p>Selon la norme NF E 04-505 – ISO 3098 :Le but d e cette normalisation e st d’assurer la lisibilité, l’homogénéité et la  reproductibilité des caractères. ON distingue les caractères Types B droite et les caractères type B penchée qui peuvent êtreinclinés de 15° environ vers la droite.</p>
+                    <h5 id="item-3-2" class="b">Les formats du dessin</h5>
+                <p>Le format d’origine est le format A0 (feuille de  1m²  de  surface)  à  partir  duquel  tous  les  autres  formats  sont  obtenus  et  se  déduisent  les   uns   des   autres   du   format   A0   en subdivisant  chaque  fois  de  moitié  le  côté  le  plus grand..</p>
+                    <h5 id="item-3-3" class="b">Nomenclature</h5>
+                <p>Une nomenclature est une liste complète des éléments constituant un ensemble ou un sous -ensemble faisant l’objet d'un dessin. Sa liaison au dessin correspondant est assurée par des repères..</p>
+                    <h5 id="item-3-4" class="b">Chapitre II: Eléments de la géométrie descriptive</h5>
+                <p>...</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Exemple-->
+        <div class="row mt-5">
+          <i class="bi-bookmark-star-fill" style="color: tomato; font-size: 1.3em;"></i> <span style="color: tomato;"># plus</span>
+          <div class="col-md-4 ">
+            <p class="c pl-2">Parmis les principaux types de dessin on distigue particulirement:
+            </p>
+          </div>
+                  <!-- images-->
+         <div class="row container">    
+          <div class="col-md-6">
+            <strong>1. Le dessin de définition</strong> <p>Il  doit  définir  complètement,  et  sans  ambiguïtés,  les  exigences auxquelles doit satisfaire le produit dans l’état de définition prescrit par le cahier des charges
+              Il  doit  comporter  le  maximum  de  précisions  à  savoir  les  caractéristiques  mécaniques  et  chimiques  des  matériaux..., et toute autre caractéristique nécessaire et utile pour la fabrication de la pièce.
+            </p>
+            <div class="text-center">
+              <img src="im/1-1dessin1.PNG" class="img-thumbnail" alt="" srcset="" title="Dessin de definition" style="width: 300px; margin: 1px auto;">
+          </div>
+          </div>
+          <div class="col-md-6">
+            <strong>2. Le dessin d'ensemble:</strong> <p>Dessin représentant un mécanisme dans son ensemble. Il est  constitué  de  l’assemblage  de  plusieurs  pièces  et  permet  une  compréhension  du  rôle  de chaque élément. fonctionnement du mécanisme à partir de la description des formes, des dimensions et de l’organisation des pièces qui le constituent.</p>
+            <div class="text-center">
+              <img src="im/1-2dessin2.JPG" class="img-thumbnail" alt="" srcset="" caption style="width: 300px;">
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Exemple 2-->
+      <div class="row mt-5">
+        <i class="bi-bookmark-star-fill" style="color: tomato; font-size: 1.3em;"></i> <span style="color: tomato;"># plus</span>
+        <div class="col-md-4 ">
+          <p class="c pl-2">Les materiels de dessins et les types d'écritures
+          </p>
+        </div>
+                <!-- images-->
+       <div class="row container">    
+        <div class="col-md-6">
+          <strong>3. Les materiels de dessin</strong> <p>
+          </p>
+          <div class="text-center">
+            <img src="im/1-3materiels.JPG" class="img-thumbnail" alt="" srcset="" title="Dessin de definition" style="width: 300px; margin: 1px auto;">
+        </div>
+        </div>
+        <div class="col-md-6">
+          <strong>4. Les types d'ecritures:</strong><p>
+        </p>
+          <div class="text-center">
+            <img src="im/1-4ecriture.JPG" class="img-thumbnail" alt="" srcset="" caption style="width: 300px;">
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Exemple 3-->
+    <div class="row mt-5">
+      <i class="bi-bookmark-star-fill" style="color: tomato; font-size: 1.3em;"></i> <span style="color: tomato;"># plus</span>
+      <div class="col-md-4 ">
+        <p class="c pl-2">Les materiels de dessins et les types d'écritures
+        </p>
+      </div>
+              <!-- images-->
+     <div class="row container">    
+      <div class="col-md-6">
+        <strong>5. Les formats</strong> <p>
+        </p>
+        <div class="text-center">
+          <img src="im/1-5format.JPG" class="img-thumbnail" alt="" srcset="" title="Dessin de definition" style="width: 300px; margin: 1px auto;">
+      </div>
+      </div>
+      <div class="col-md-6">
+        <strong>6. La Nomenclature</strong><p>
+      </p>
+        <div class="text-center">
+          <img src="im/1-6nomenclature.JPG" class="img-thumbnail" alt="" srcset="" caption style="width: 300px;">
+      </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- Exo-->
+        <div class="row mt-5">
+          <i class="bi-bookmark-dash-fill" style="color: blue; font-size: 1.3em;"></i> <span style="color: blue;"># exo</span>
+          <div class="col-md-4 ">
+            <p class="d pl-2">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s 
+              most popular front-end open source toolkit</p>
+          </div>
+          <div class="col-md-6">
+            <img src="i/a-dessin.PNG" class="img-thumbnail" alt="" srcset="">
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+          <i class="bi-bookmark-check-fill" style="color: rgb(128, 209, 7); font-size: 1.3em;"></i> <span style="color: rgb(6, 187, 6);">solut°</span>
+          <div class="col-md-4 ">
+            <p class="e pl-2">Solution <a href="#"> <i class="bi-box-seam ml-3" style="font-size: 2em;"></i> </a></p> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn rounded-circle btn-primaryd-block d-sm-none p-0" style="width: 40px;height: 40px; position: fixed;right: 8px;bottom: 23px;background-color: rgb(228, 38, 4); border-color:white; color:white" data-toggle="modal" data-target="#staticBackdrop">
+<i class="bi-grid"></i>
+</button>
+
+<!-- Sommaire Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Sommaire</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <nav id="navresum" class="navbar navbar-light bg-light">
+          <nav class="nav nav-pills flex-column" style="font-size: 2%;">
+            <a class="nav-link f " href="#item-1" data-dismiss="modal">Chapitre I: Généralité sur le dessin technique</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link f ml-3 my-1" href="#item-1-1" data-dismiss="modal">But du dessin technique</a>
+              <a class="nav-link f ml-3 my-1" href="#item-1-2" data-dismiss="modal">La normalisation</a>
+              <a class="nav-link f ml-3 my-1" href="#item-1-3">Principaux types de dessin</a>
+              <a class="nav-link f  ml-3 my-1" href="#item-1-4" data-dismiss="modal">Matériel du dessinateur</a>
+              <a class="nav-link f ml-3 my-1" href="#item-1-5" data-dismiss="modal">Ecritures</a>
+              <a class="nav-link f ml-3 my-1" href="#item-1-6" data-dismiss="modal">Les formats de dessin</a>
+              <a class="nav-link f ml-3 my-1" href="#item-1-7" data-dismiss="modal">Nomenclature</a>
+            </nav>
+            <a class="nav-link f" href="#item-2" data-dismiss="modal">Chapitre II: Eléments de la géométrie descriptive</a>
+            <a class="nav-link f" href="#item-3" data-dismiss="modal">Item 3</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link f ml-3 my-1" href="#item-3-1" data-dismiss="modal">Item 3-1</a>
+              <a class="nav-link f ml-3 my-1" href="#item-3-2" data-dismiss="modal">Item 3-2</a>
+            </nav>
+          </nav>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+ <!--Footer-->
+
+ <footer class=" white-text teal accent-3 z-depth-5" style="padding-left: 8px; padding-right: 8px; background-color: #5A66D7; color: whitesmoke;">
+  <div class="row" style="margin-bottom: 0rem; padding: 1rem;">
+        <div class="col s12 m4 ">
+          <h5><span style="font-weight: 900;">Solution</span>  <span class="g">Injinia</span> </5>
+        </div>
+        <div class="col s12 m4 center-align">
+ 
+          <i class="bi-facebook mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-twitter mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-linkedin mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-youtube mr " style="font-size: 1.8em;"></i> 
+       
+        </div>
+        <div class="col s12 m4">
+        <p>
+          <i class="bi-globe right fa-2x mr" style="font-size: 1.5em;"> <span class="p" style="font-size: 15px;">Français</span> </i>
+        </p>
+        </div>
+  </div>
+</footer>
+
+<div class="page-footer teal accent-4"style="padding: 8px; background-color: #212861; color:white">
+<div class="container">
+<div class="row" style="margin-bottom: 0rem; padding: 2rem;">
+  <div class="col s12 m4 ">
+      <h5>Terms & Conditions</h5>
+      <p>Apprennez plus sur les termes et condition générales d'utilisation de la plateforme injinia</p>
+  </div>
+  <div class="col s12 m4">
+    <h5>Social media</h5>
+      <i class="bi-arrow-right-short"></i> Linkedin <br>
+      <i class="bi-arrow-right-short"></i> Twitter <br>
+      <i class="bi-arrow-right-short"></i> Facebook
+</div>
+  <div class="col s12 m4">
+      <h5>Navigation</h5>
+      <i class="bi-app-indicator"></i> Accueil <br>
+      <i class="bi-app-indicator"></i> Leçons <br>
+      <i class="bi-app-indicator"></i> Contact <br>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer> 
+  <div class="foot container-fluid  text-center text-white bg-primary p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <br>
+          <h5>Injinia</h5>
+            <h6>Copyright &copy; <script>document.write(new Date().getFullYear())</script> </h6>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+    <!--JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <script src="bootstrap.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+        
+</body>
+</html>

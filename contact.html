@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injinia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="ft/bootstrap-icons.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+       <style>
+        @font-face {font-family: 'ARegular';
+                    src: url('ft/ARegular.otf');}
+        @font-face {font-family: 'ABold';
+            src: url('ft/ABold.otf');}
+        @font-face {font-family: 'ALight';
+            src: url('ft/ALight.otf');}
+
+        .premier{ background-image: url(); opacity:1;}
+        .a{box-shadow : 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;}
+        .a-1{box-shadow : 0px 0px 10px #bebebe, 0px 0px 0px #ffffff;}
+        .k{padding-left:15px; padding-right:15px;padding-bottom:12px; padding-top:13px;
+          font-size: 1.5em;border-radius: 100%;color:white; background: linear-gradient(to right, #f12711, #f5af19);}
+           
+        .kfo{padding-left:2.3rem; padding-right:2.3rem;padding-bottom:2rem; padding-top:2rem;
+          font-size: 2.5em;border-radius: 100%;background: linear-gradient(to right, #f12711, #f5af19);}
+           
+        .pad{padding: 50px;}
+        .foot{ padding: 10px;background: linear-gradient(to right, #000000, #434343);}
+        a, h1, h3,h4, h5, .kfo {font-family: 'ALight';}
+        h4{color: #000000;}
+        p, li, h6, button, input{font-family: 'ALight';}
+        .auteurs:hover{ background: linear-gradient(to right, #000000, #434343); color: white;}
+        .fond, .subm{ background: linear-gradient(to right, #fe8c00, #f83600); }
+        .fondu{ background: linear-gradient(to right, #000000, #434343); }
+        .pad1{background: linear-gradient(to left, #212861, #5A66D7);}
+        .pad2{background: linear-gradient(to right, #000000, #434343); }
+       
+          .round{
+            overflow: hidden;
+            width: 10em;
+            height: 10em;
+            line-height: 100px;
+            padding: 0;
+            border-radius: 50%;
+            text-align: center;
+            
+          }
+          .b{
+                color: indigo;
+                font-weight: bold;
+                font-size: 17px;
+
+              }
+              .c{
+                border-left: tomato solid 4px;
+              }
+              .d{
+                border-left: #6f7add solid 4px;
+              }
+              .e{
+                border-left: rgb(142, 236, 0) solid 4px;
+              }
+              .f, p, ul>li{
+                font-size: 14px;
+              }
+              .active{
+                border-bottom: solid #5A66D7 1px;
+                width: fit-content;
+              }
+       </style>
+</head>
+<body>
+ <!--Navbar-->
+ <div class="container-fluid text-white bg-white sticky-top shadow-lg" style="opacity: 0.95;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <nav class=" navbar navbar-expand-sm navbar-light bg-white text-dark ">
+
+              <a href="#" class="navbar-brand "><img src="i/logo.jpg" alt="auteur" class=" mx-auto bg-info " style="width: 5rem; border-radius: 100%;"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-label="toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+             <div class="collapse navbar-collapse " id="menu">
+               <ul class="navbar-nav ml-auto">
+
+                      <li class="nav-item ">
+                          <a href="index.html" class="nav-link">Accueil <span class="sr-only">(current)</span> </a>
+                      </li>
+                      <li class="nav-item ">
+                          <a href="lecons.html" class="nav-link">Leçon</a>
+                      </li>
+                      <li class="nav-item active mr-2 mb-2">
+                          <a href="contact.html" class="nav-link">Contact</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Recherche" aria-label="Search">
+                        <i class="btn bi-search" ></i>
+                        <i class="btn bi-person-square" ></i>
+                      </form>
+                </ul>
+              </div>
+              </nav>
+            </div>
+      </div>
+           
+        </div>
+ </div>
+   
+
+    <!--apropos-->
+    
+    <div class=" container-fluid text-center text-dark bg-light ">
+      <div class="container">
+        <div class="row p-4">
+          <div class="col ">
+             <h4 class=" text-center" id="apropos" > A propos de moi</h4>
+                <p class=" text-center" ></p>
+                <img src="i/img1.jpg" alt="" class="img-thumbnail img-fluid img" srcset="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!--Nous contacter-->
+
+    <div class="pad container-fluid text-center text-dark bg-ligth ">
+      <div class="container ">
+
+        <div class="row">
+          <div class="col-sm-8">
+             <h4 class="text-center" id="contact">Nous contacter</h4>
+                <p class=" text-center">S'il vous plait n'hesitez pas à nous concatcter pour toute question relativement à cette platforme . Merci !!</p>
+
+                    <h6>Via Whatsapp</h6>
+                    <a href="https://api.whatsapp.com/send?phone=22796402185&fbclid=IwAR2sgZkyTO_0WiieGO5aPyNnZ7vQsM-uNz364hEOi5JJWGiYz88pozg1bDk"><img src="i/whatsapp1.svg" alt="" class="mb-3" style="width: 43px;"></a>
+                    <h6>Via Telegram</h6>
+                    <a href="#"><i class="bi-telegram" style="font-size: 2.5rem; color: rgb(169, 169, 169);"></i></a>
+                    <h6>Via Mail</h6>
+                    <a href="mailto:tchiffa.guimbarou@gmail.com"><i class="bi-google" style="font-size: 2.5rem; color: rgb(169, 169, 169);"></i></a>
+                      <div class="row mb-3">
+                        <div class="col">
+                  <form>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="fas fa-user"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control " placeholder="Nom">
+                        </div> 
+                        
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                          </div>
+                          <input type="email" class="form-control" placeholder="Email"> 
+                        </div> 
+                        
+                        <div class="input-group mb-3">
+
+                              <div class="input-group-prepend">
+
+                                <span class="input-group-text" style="height: 8rem;"><i class="fas fa-pen"></i></span>
+                              </div> 
+
+                              <textarea class="form-control">Message</textarea>
+                              
+                            </div> 
+
+                        <input type="submit" class="form-control mb-3 subm text-light" value="submit">
+                  
+                  </form> 
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-sm-4 my-auto"><img src="i/logo.jpg" alt="" srcset="" style="width: 300px;"></div>
+        </div>
+      </div>
+    </div>
+         
+
+
+ <!--Footer-->
+
+ <footer class=" white-text teal accent-3 z-depth-5" style="padding-left: 8px; padding-right: 8px; background-color: #5A66D7; color: whitesmoke;">
+  <div class="row" style="margin-bottom: 0rem; padding: 1rem;">
+        <div class="col s12 m4 ">
+          <h5><span style="font-weight: 900;">Solution</span>  <span class="g">Injinia</span> </5>
+        </div>
+        <div class="col s12 m4 center-align">
+ 
+          <i class="bi-facebook mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-twitter mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-linkedin mr-2" style="font-size: 1.5em;"></i> 
+          <i class="bi-youtube mr " style="font-size: 1.8em;"></i> 
+       
+        </div>
+        <div class="col s12 m4">
+        <p>
+          <i class="bi-globe right fa-2x mr" style="font-size: 1.5em;"> <span class="p" style="font-size: 15px;">Français</span> </i>
+        </p>
+        </div>
+  </div>
+</footer>
+
+<div class="page-footer teal accent-4"style="padding: 8px; background-color: #212861; color:white">
+<div class="container">
+<div class="row" style="margin-bottom: 0rem; padding: 2rem;">
+  <div class="col s12 m4 ">
+      <h5>Terms & Conditions</h5>
+      <p>Apprennez plus sur les termes et condition générales d'utilisation de la plateforme injinia</p>
+  </div>
+  <div class="col s12 m4">
+    <h5>Social media</h5>
+      <i class="bi-arrow-right-short"></i> Linkedin <br>
+      <i class="bi-arrow-right-short"></i> Twitter <br>
+      <i class="bi-arrow-right-short"></i> Facebook
+</div>
+  <div class="col s12 m4">
+      <h5>Navigation</h5>
+      <i class="bi-app-indicator"></i> Accueil <br>
+      <i class="bi-app-indicator"></i> Leçons <br>
+      <i class="bi-app-indicator"></i> Contact <br>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer> 
+  <div class="foot container-fluid  text-center text-white bg-primary p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <br>
+          <h5>Injinia</h5>
+            <h6>Copyright &copy; <script>document.write(new Date().getFullYear())</script> </h6>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+    <!--JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <script src="bootstrap.js"></script>
+        <script src="bootstrap.bundle.js"></script>
+        <script src="Jquery.js"></script>
+</body>
+</html>
